@@ -22,7 +22,7 @@ Open Terminal and type:
 
 Change permission
 
-	sudo chmod a+rw /dev/ttyUSB0
+	sudo chmod a+rw /dev/ttyACM0
 
 add our user to the group
 

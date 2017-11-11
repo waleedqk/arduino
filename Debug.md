@@ -1,20 +1,5 @@
 # Debug Tips
 
-**Install the Arduino Software (IDE) on on Linux**
-
-https://www.arduino.cc/en/Guide/Linux
-
-### Need Serial Port Permissions
-
-Open Terminal and type:
-
-    ls -l /dev/ttyACM*
-
-add our user to the group
-
-    sudo usermod -a -G dialout $USER
-
-
 **Cannot upload code to device - Port Busy**
 
 https://askubuntu.com/questions/767505/cannot-access-adafruit-feather-32u4

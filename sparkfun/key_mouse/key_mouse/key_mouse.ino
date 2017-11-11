@@ -110,7 +110,7 @@ void sendKeyPress(int key)
       Keyboard.write('1');  // Sends a keyboard '1'
       break;
     case 2:  // 0x002
-      Keyboard.write('2');
+      Keyboard.write('*');
       break;
     case 4:  // 0x004
       Keyboard.write('3');
@@ -134,7 +134,7 @@ void sendKeyPress(int key)
       Keyboard.write('9');
       break;
     case 512:  // 0x200
-      Keyboard.write('+');
+      Keyboard.write('2');
       break;
     case 1024:  // 0x400
       Keyboard.write('0');  // Sends a keyboard '0'

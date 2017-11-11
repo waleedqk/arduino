@@ -13,7 +13,7 @@ https://askubuntu.com/questions/767505/cannot-access-adafruit-feather-32u4
 https://learn.adafruit.com/adafruit-arduino-ide-setup/linux-setup#udev-rules
 
     wget https://github.com/adafruit/Trinket_Arduino_Linux/raw/master/99-adafruit-boards.rules
-    sudo cp 99-adafruit-boards.rules /etc/udev/rules.d/
+    sudo mv 99-adafruit-boards.rules /etc/udev/rules.d/
 
 Reload udev's rules
 
@@ -26,4 +26,4 @@ If the command above fails, try instead running:
 
 Add current user to the dialout group with
 
-    sudo usermod -a -G dialout $USER
+    sudo usermod -a -G dialout <user>

@@ -26,4 +26,4 @@ Change permission
 
 add our user to the group
 
-    sudo usermod -a -G dialout $USER
+    sudo usermod -a -G dialout <user>

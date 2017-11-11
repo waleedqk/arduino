@@ -107,45 +107,7 @@ void loop()
    is being pressed */
 void sendKeyPress(int key)
 {
-  switch(key)
-  {
-    case 1:  // 0x001
-      Keyboard.write('1');  // Sends a keyboard '1'
-      break;
-    case 2:  // 0x002
-      Keyboard.write('*');
-      break;
-    case 4:  // 0x004
-      Keyboard.write('3');
-      break;
-    case 8:  // 0x008
-      Keyboard.write('4');
-      break;
-    case 16:  // 0x010
-      Keyboard.write('5');
-      break;
-    case 32:  // 0x020
-      Keyboard.write('6');
-      break;
-    case 64:  // 0x040
-      Keyboard.write('7');
-      break;
-    case 128:  // 0x080
-      Keyboard.write('8');
-      break;
-    case 256:  // 0x100
-      Keyboard.write('9');
-      break;
-    case 512:  // 0x200
-      Keyboard.write('2');
-      break;
-    case 1024:  // 0x400
-      Keyboard.write('0');  // Sends a keyboard '0'
-      break;
-    case 2048:  // 0x800
-      Keyboard.write('\n');  // Sends the 'ENTER' key
-      break;
-  }
+   //Keyboard.println(key);
 }
 
 /* getKeypadStatus(): This function returns an int that represents
@@ -177,6 +139,9 @@ int getKeypadStatus()
     {  // embedded for loop to check all 3 columns of each row
       if (!digitalRead(columnPins[col]))
       {
+        Keyboard.println(row);
+        Keyboard.println(col);
+        
         keypadStatus |= 1 << ((row+1)*3 + (col+1) - 4);  // set the status bit of the keypad return value
       }
     }
@@ -186,4 +151,5 @@ int getKeypadStatus()
   
   return keypadStatus;
 }
+
 

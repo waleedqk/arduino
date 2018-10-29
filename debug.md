@@ -8,7 +8,7 @@ https://askubuntu.com/questions/767505/cannot-access-adafruit-feather-32u4
     `upload_code`
     sudo systemctl start ModemManager.service
 
-### Permanent Ficx
+### Permanent Fix
 
 https://learn.adafruit.com/adafruit-arduino-ide-setup/linux-setup#udev-rules
 
@@ -26,4 +26,4 @@ If the command above fails, try instead running:
 
 Add current user to the dialout group with
 
-    sudo usermod -a -G dialout <user>
+    sudo usermod -a -G dialout $USER
